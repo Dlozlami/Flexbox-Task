@@ -20,6 +20,6 @@
   padding-bottom: 10px;
 }
 
-.Flexbox-circle{
-  flex-shrink: 0;
+.Circle{
+  border-radius: 50%;
 }
