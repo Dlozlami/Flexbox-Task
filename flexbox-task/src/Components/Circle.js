@@ -1,7 +1,7 @@
-export default function Rectangle({sides}){
+export default function Rectangle({sides,marginSpacing}){
 
-    let radius = (sides/2)+'px';
-    let sidesStr = sides+'px';
+    let radius = (sides/2)+'vw';
+    let sidesStr = sides+'vw';
 
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     let newColor = "#" + randomColor;
@@ -11,7 +11,9 @@ export default function Rectangle({sides}){
         borderRadius:radius,
         height:sidesStr,
         width:sidesStr,
-        alignSelf:"center"
+        alignSelf:"center",
+        marginLeft:marginSpacing,
+        marginRight:marginSpacing
     }
     return(
         <div className="Flexbox-circle" style={myStyles}>

@@ -1,4 +1,4 @@
-export default function Rectangle({boxHeight,boxWidth,growth,alignment}){
+export default function Rectangle({boxWidth,marginSpacing,round}){
     
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     let newColor = "#" + randomColor;
@@ -6,9 +6,9 @@ export default function Rectangle({boxHeight,boxWidth,growth,alignment}){
     const myStyles = {
         backgroundColor:newColor,
         width:boxWidth,
-        height:boxHeight,
-        flexGrow:growth,
-        alignContent:alignment
+        marginLeft:marginSpacing,
+        marginRight:marginSpacing,
+        borderRadius:round
     }
 
     return(
