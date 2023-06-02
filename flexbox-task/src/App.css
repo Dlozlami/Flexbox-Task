@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.FlexContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Flexbox-rectangle{
+  width:200px;
+  margin: 10px;
+}
+
+.Flexbox-circle{
+  margin: 10px;
+}
