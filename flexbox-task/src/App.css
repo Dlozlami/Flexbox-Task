@@ -1,23 +1,25 @@
 *{
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .App{
   display: flex;
   flex-direction: column;
-
 }
 
-.FlexContainer{
+
+.TopandBottomDiv{
   display: flex;
-  padding-top: 50px;
+  padding: 50px;
+  height: 20vh;
+}
+
+.CenterDiv{
+  display: flex;
+  height:60vh;
   padding-left: 50px;
   padding-right: 50px;
-
-}
-
-.FlexContainer:last-child{
-  padding-bottom: 50px;
+  justify-content: space-between;
 }
 
 .Circle{
